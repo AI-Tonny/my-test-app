@@ -1,4 +1,5 @@
-import { View, Text } from "react-native";
+import { View, StatusBar } from "react-native";
+import LoginForm from "@/components/LoginForm";
 
 export default function Index() {
   return (
@@ -7,7 +8,9 @@ export default function Index() {
         justifyContent: 'center',
         alignItems: 'center'
     }}>
-        <Text>Hello, world</Text>
+      <StatusBar barStyle="dark-content"/>
+
+      <LoginForm />
     </View>
   );
 }
